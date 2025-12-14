@@ -1,0 +1,101 @@
+{
+  "image_name": "WhatsApp Image 2025-12-15 at 00.15.49_b6ced31a.jpg",
+  "image_path": "images\\WhatsApp Image 2025-12-15 at 00.15.49_b6ced31a.jpg",
+  "processed_at": "2025-12-15T02:37:20.633636",
+  "patient_info": {
+    "user": "ARFA DIAGNOSTIC CENTRE",
+    "booking_no": "81034",
+    "patient_no": "75919",
+    "patient_name": "MRS.AMIN",
+    "sample_collected": "Inside Lab",
+    "age_sex": "45 Years / Female",
+    "test_booked": "07/11/2025 06:07 PM",
+    "results_saved": "07/11/2025 06:08 PM",
+    "mobile": "03336544368",
+    "collection_point": "ARFA AZIZ FATIMA",
+    "consultant": "Self"
+  },
+  "laboratory_info": {
+    "phcr_number": "ARFA"
+  },
+  "haematology_report": [
+    {
+      "test_name": "Hemoglobin (HB)",
+      "observed_value": "12.7",
+      "unit": "g/dl",
+      "reference_range": "Male: 13.5 -17.5"
+    },
+    {
+      "test_name": "Red Blood Cell (RBC)",
+      "observed_value": "85.5",
+      "unit": "fl",
+      "reference_range": "4-6"
+    },
+    {
+      "test_name": "White Blood Cell (WBC/TLC)",
+      "observed_value": "66",
+      "unit": "%",
+      "reference_range": "4-17"
+    },
+    {
+      "test_name": "Neutrophils",
+      "observed_value": "30",
+      "unit": "%",
+      "reference_range": "40-75"
+    },
+    {
+      "test_name": "Lymphocytes",
+      "observed_value": "02",
+      "unit": "%",
+      "reference_range": "2-10"
+    },
+    {
+      "test_name": "Eosinophil",
+      "observed_value": "02",
+      "unit": "%",
+      "reference_range": "1-6"
+    },
+    {
+      "test_name": "Basophils",
+      "observed_value": "<00",
+      "unit": "%",
+      "reference_range": "0.0-1.0"
+    },
+    {
+      "test_name": "Platelets Count",
+      "observed_value": "263",
+      "unit": "*10^9/1",
+      "reference_range": "150-400"
+    }
+  ],
+  "blood_indices": [
+    {
+      "test_name": "Hematocrit (HCT)",
+      "observed_value": "4.42",
+      "unit": "*10^12/1",
+      "reference_range": "40.0 -52.0"
+    },
+    {
+      "test_name": "Mean Cell Volume (MCV)",
+      "observed_value": "28.7",
+      "unit": "",
+      "reference_range": "75.0 - 100.0"
+    },
+    {
+      "test_name": "Mean Cell Hemoglobin (MCH)",
+      "observed_value": "33.6",
+      "unit": "pg",
+      "reference_range": "25.0 - 35.0"
+    },
+    {
+      "test_name": "Mean Cell Hb Conc (MCHC)",
+      "observed_value": "7",
+      "unit": "g/dl",
+      "reference_range": "30-35"
+    }
+  ],
+  "morphology": {},
+  "footer_info": {
+    "doctor_name": "Dr. Irfan Shabbir"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "image_name": "WhatsApp Image 2025-12-15 at 00.15.48_a45d6464.jpg",
+  "image_path": "images\\WhatsApp Image 2025-12-15 at 00.15.48_a45d6464.jpg",
+  "processed_at": "2025-12-15T02:36:27.210635",
+  "patient_info": {
+    "received_date": "08:00 AM",
+    "report_date": "Lab No/Result No",
+    "referring_doctor": "IGNATIUS AVINASH",
+    "specimen": "WHOLE BLOOD",
+    "ward_bed": "PVT-6TH/607"
+  },
+  "laboratory_info": {
+    "name": "Grant Medical Foundation"
+  },
+  "haematology_report": [
+    {
+      "test_name": "W.B.C.Count",
+      "observed_value": "12000",
+      "unit": "/ul",
+      "reference_range": "4000-10000"
+    },
+    {
+      "test_name": "Neutrophils",
+      "observed_value": "78.3",
+      "unit": "%",
+      "reference_range": "40-80",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Lymphocytes",
+      "observed_value": "13.7",
+      "unit": "%",
+      "reference_range": "20 - 40",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Monocytes",
+      "observed_value": "7.4",
+      "unit": "%",
+      "reference_range": "2-10",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Eosinophils",
+      "observed_value": "0.4",
+      "unit": "%",
+      "reference_range": "1.0-6.0",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Basophils",
+      "observed_value": "0.2",
+      "unit": "%",
+      "reference_range": "0.0-1.0",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Absolute Neutrophil Count",
+      "observed_value": "9.36",
+      "unit": "x103cells/ul",
+      "reference_range": "2-7",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Absolute Lymphocyte Count",
+      "observed_value": "1.64",
+      "unit": "x103cells/ul",
+      "reference_range": "1-3",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Absolute Monocyte Count",
+      "observed_value": "0.88",
+      "unit": "x103cells/ul",
+      "reference_range": "0.2-1.0",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Absolute Eosinophil Count",
+      "observed_value": "0.05",
+      "unit": "x103cells/ul",
+      "reference_range": "0.02-0.5",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Absolute Basophil Count",
+      "observed_value": "0.03",
+      "unit": "x103cells/ul",
+      "reference_range": "0.02 - 0.1",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "R.B.C Count",
+      "observed_value": "2.0",
+      "unit": "million/ul",
+      "reference_range": "4.5-5.5",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Haemoglobin",
+      "observed_value": "6.7",
+      "unit": "g/dl",
+      "reference_range": "13-17",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Haematocrit",
+      "observed_value": "20.4",
+      "unit": "%",
+      "reference_range": "40-50",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Platelet Count",
+      "observed_value": "44",
+      "unit": "x103/ul",
+      "reference_range": "150-410",
+      "category": "Differential Count"
+    }
+  ],
+  "blood_indices": [
+    {
+      "test_name": "MCV",
+      "observed_value": "99.3",
+      "unit": "fl",
+      "reference_range": "83-101"
+    },
+    {
+      "test_name": "MCH",
+      "observed_value": "32.8",
+      "unit": "pg",
+      "reference_range": "27-32"
+    },
+    {
+      "test_name": "MCHC",
+      "observed_value": "33.0",
+      "unit": "g/dl",
+      "reference_range": "31.5-34.5"
+    },
+    {
+      "test_name": "RDW",
+      "observed_value": "18.7",
+      "unit": "%",
+      "reference_range": "11.6-14"
+    }
+  ],
+  "morphology": {},
+  "footer_info": {
+    "printed_by": "Printed On"
+  }
+}
