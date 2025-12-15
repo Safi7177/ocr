@@ -2,52 +2,44 @@
 
 **Image Path:** `images\WhatsApp Image 2025-12-15 at 00.15.48_055e4d20.jpg`
 
-**Processed At:** 2025-12-15T02:35:54.235636
+**Processed At:** 2025-12-15T05:25:54.885586
 
 ## Patient Information
 
-- **Patient Id:** 202504255
-- **Referring Doctor:** Dr. Shree Parth Hospital
+- **Collection Date:** Patient's
+- **Referring Doctor:** Reporting Date
 
 ## Laboratory Information
 
-- **Name:** PARTH PATHOLOGY LABORATORY
+- **Name:** Lab Technician 24
+- **Phone:** %
 
 ## Haematology Report
 
 | Test Name | Observed Value | Unit | Reference Range |
 |-----------|----------------|------|-----------------|
-| HEMOGLOBIN | 12.0 |  | mg/dl |
-| Total R.B.C. | 4.42 |  | mill/cumm |
-| Total W. B. C. | 16900 |  | /cumm |
-| Polymorphs | 83 | % | 40-75 |
-| Lymphocytes | 12 | % | 20-45 |
-| Eosinophils | 03 | % | 1-6 |
-| Monocytes | 02 | % | 2-8 |
-| Basophils | 00 | % | 0-1 |
-| PLATELET COUNT | 1.76 | Lakhs /cmm | 1.54.5 |
+| HEMOGLOBIN |  | mg/dl | 13.5-17.5 |
+| Total R.B.C. |  | mill/cumm | 4.5-6.2 |
+| Lymphocytes |  | % | 20-45 |
+| Eosinophils |  | % | 1-6 |
+| Monocytes |  | % | 2-8 |
+| Basophils |  | % | 0-1 |
 
 ## Blood Indices
 
 | Test Name | Observed Value | Unit | Reference Range |
 |-----------|----------------|------|-----------------|
-| H.C.T. | 40.10 | % | 45-52 |
-| M.C.V. | 90.72 | fl | 84-96 |
-| M.C.H. | 27.15 | pg | 27-32 |
+| H.C.T. |  | % | 45-52 |
+| M.C.V. |  | fl | 84-96 |
+| M.C.H. | 29.93 | pg | 27-32 |
 | M.C.H.C. | 29.93 | g/dl | 30-36 |
-| R.D.W. | 10.2 | % | 10.0-15.0 |
-| M.P.V. | 6.62 | % | 6.5-11.0 |
-| Plateletcrit (PCT) | 0.160 | % | 0.100-0.500 |
-
-## Morphology
-
-- **Rbc Morphology:** Normocytic Normochromic
-- **Platelets On Smear:** Adequate on Smear
+| R.D.W. |  | % | 10.0-15.0 |
+| M.P.V. |  | % | 6.5-11.0 |
+| ** End of Report *** | 24 |  |  |
+| MBBS,DCP | 24 |  |  |
 
 ## Footer Information
 
-- **Doctor Name:** Dr.D.P.Rajput
-- **Qualification:** MBBS,DCP
-- **Registration:** Registration No.071082
+- **Doctor Name:** UNIAU
 - **Lab Technician:** Lab Technician
 

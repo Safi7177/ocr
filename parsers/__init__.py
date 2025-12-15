@@ -5,6 +5,7 @@ Medical report parsers for different laboratory formats.
 from .parth_parser import parse_parth_format
 from .grant_parser import parse_grant_format
 from .arfa_parser import parse_arfa_format
+from .universal_parser import parse_universal_format
 
 
 def detect_report_format(texts):
@@ -12,6 +13,9 @@ def detect_report_format(texts):
     Detect the format of the medical report based on keywords.
     Returns: 'parth', 'grant', 'arfa', or 'unknown'
     """
+    if not texts:
+        return 'unknown'
+    
     text_str = " ".join(texts[:50]).upper()  # Check first 50 items
     
     if "PARTH PATHOLOGY" in text_str or "PARTH" in text_str:
@@ -26,7 +30,7 @@ def detect_report_format(texts):
 def parse_medical_report(rec_texts):
     """
     Parse medical report from OCR text and extract structured fields.
-    Supports multiple report formats: PARTH, Grant Medical, ARFA.
+    Supports multiple report formats: PARTH, Grant Medical, ARFA, and any other format via universal parser.
     """
     if not rec_texts:
         return {
@@ -35,7 +39,8 @@ def parse_medical_report(rec_texts):
             "haematology_report": [],
             "blood_indices": [],
             "morphology": {},
-            "footer_info": {}
+            "footer_info": {},
+            "other_fields": {}
         }
     
     # Convert to list of strings for easier processing
@@ -45,13 +50,37 @@ def parse_medical_report(rec_texts):
     format_type = detect_report_format(texts)
     
     # Route to appropriate parser
+    # For known formats, try specific parser first, then fallback to universal
     if format_type == 'parth':
-        return parse_parth_format(texts)
+        try:
+            result = parse_parth_format(texts)
+            # Validate that we got some data
+            if result.get('haematology_report') or result.get('blood_indices') or result.get('patient_info'):
+                return result
+        except Exception:
+            pass
+        # Fallback to universal parser
+        return parse_universal_format(texts)
     elif format_type == 'grant':
-        return parse_grant_format(texts)
+        try:
+            result = parse_grant_format(texts)
+            # Validate that we got some data
+            if result.get('haematology_report') or result.get('blood_indices') or result.get('patient_info'):
+                return result
+        except Exception:
+            pass
+        # Fallback to universal parser
+        return parse_universal_format(texts)
     elif format_type == 'arfa':
-        return parse_arfa_format(texts)
+        try:
+            result = parse_arfa_format(texts)
+            # Validate that we got some data
+            if result.get('haematology_report') or result.get('blood_indices') or result.get('patient_info'):
+                return result
+        except Exception:
+            pass
+        # Fallback to universal parser
+        return parse_universal_format(texts)
     else:
-        # Try to parse as generic/unknown format
-        # Fallback to PARTH format parser
-        return parse_parth_format(texts)
+        # Use universal parser for unknown formats or as fallback
+        return parse_universal_format(texts)

@@ -1,0 +1,178 @@
+{
+  "image_name": "img1.jpg",
+  "image_path": "images\\img1.jpg",
+  "processed_at": "2025-12-15T05:25:19.144589",
+  "patient_info": {
+    "patient_id": "PN2",
+    "age": "20/Male",
+    "referring_doctor": "Self",
+    "collection_date": "24/06/2023 08:49 PM",
+    "report_date": "24/06/2023 09:02 PM"
+  },
+  "laboratory_info": {
+    "name": "https://www.flabs.in/ Name",
+    "phone": "300000"
+  },
+  "haematology_report": [
+    {
+      "test_name": "Haemoglobin",
+      "observed_value": "15",
+      "unit": "g/dL",
+      "reference_range": "13 -17"
+    },
+    {
+      "test_name": "Total Leucocyte Count",
+      "observed_value": "5000",
+      "unit": "/cumm",
+      "reference_range": "4000 - 10000"
+    },
+    {
+      "test_name": "Neutrophils",
+      "observed_value": "50",
+      "unit": "%",
+      "reference_range": "40 - 80",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Lymphocytes",
+      "observed_value": "40",
+      "unit": "%",
+      "reference_range": "20 - 40",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Eosinophils",
+      "observed_value": "1",
+      "unit": "",
+      "reference_range": "1-6",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "&",
+      "observed_value": "9",
+      "unit": "",
+      "reference_range": "2-10",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "2-10",
+      "observed_value": "0.00",
+      "unit": "%",
+      "reference_range": "0 - 1",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "0 - 1",
+      "observed_value": "2500.00",
+      "unit": "%",
+      "reference_range": "",
+      "category": "Differential Count"
+    },
+    {
+      "test_name": "Absolute Neutrophils",
+      "observed_value": "2500.00",
+      "unit": "",
+      "reference_range": "2000 -7000",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "Absolute Lymphocytes",
+      "observed_value": "2000.00",
+      "unit": "",
+      "reference_range": "1000 - 3000",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "Absolute Eosinophils",
+      "observed_value": "50.00",
+      "unit": "",
+      "reference_range": "20-500",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "Absolute Monocytes",
+      "observed_value": "450.00",
+      "unit": "",
+      "reference_range": "200 - 1000",
+      "category": "Absolute Count"
+    }
+  ],
+  "blood_indices": [
+    {
+      "test_name": "RBC Count",
+      "observed_value": "5",
+      "unit": "",
+      "reference_range": "4.5 - 5.5",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "MCV",
+      "observed_value": "80.00",
+      "unit": "",
+      "reference_range": "81 -101",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "MCH",
+      "observed_value": "30.00",
+      "unit": "",
+      "reference_range": "27 - 32",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "MCHC",
+      "observed_value": "37.50",
+      "unit": "",
+      "reference_range": "31.5 - 34.5",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "Hct",
+      "observed_value": "40",
+      "unit": "",
+      "reference_range": "40 - 50",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "RDW-CV",
+      "observed_value": "12",
+      "unit": "",
+      "reference_range": "11.6 - 14.0",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "RDW-SD",
+      "observed_value": "40",
+      "unit": "",
+      "reference_range": "39 - 46",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "150000 - 410000",
+      "observed_value": "35",
+      "unit": "",
+      "reference_range": "",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "35",
+      "observed_value": "8",
+      "unit": "",
+      "reference_range": "7.5 - 11.5",
+      "category": "Absolute Count"
+    },
+    {
+      "test_name": "8",
+      "observed_value": "9",
+      "unit": "",
+      "reference_range": "7.5 - 11.5",
+      "category": "Absolute Count"
+    }
+  ],
+  "morphology": {},
+  "footer_info": {},
+  "other_fields": {
+    "https": "Mr Dummy",
+    "Collection Date": "Report Date"
+  }
+}

@@ -4,7 +4,7 @@ import cv2
 from pathlib import Path
 from paddleocr import PaddleOCR
 from datetime import datetime
-from parsers import parse_medical_report
+from parsers.universal_parser import parse_universal_format, generate_markdown
 
 def preprocess_image(img):
     """
@@ -97,13 +97,14 @@ def process_images_with_ocr():
                 json.dump(raw_data, f, indent=2, ensure_ascii=False, default=str)
             print(f"  [INFO] Raw data saved: {raw_path}")
             
-            # Extract structured fields from medical report
+            # Extract structured fields from medical report using universal parser
             structured_data = {}
             if result and isinstance(result, list) and len(result) > 0:
                 first_item = result[0]
                 if isinstance(first_item, dict) and "rec_texts" in first_item:
                     rec_texts = first_item.get("rec_texts", [])
-                    structured_data = parse_medical_report(rec_texts)
+                    # Use universal parser directly
+                    structured_data = parse_universal_format(rec_texts)
                     patient_id = structured_data.get('patient_info', {}).get('patient_id', 'N/A')
                     haematology_count = len(structured_data.get('haematology_report', []))
                     blood_indices_count = len(structured_data.get('blood_indices', []))
@@ -124,7 +125,15 @@ def process_images_with_ocr():
                 json.dump(final_output, f, indent=2, ensure_ascii=False)
             print(f"  [OK] JSON saved: {json_path}")
             
-            # Generate Markdown result
+            # Save test-result file (universal parser output)
+            if structured_data:  # Only save if we have parsed data
+                test_result_filename = f"test-result_{image_path.stem}.json"
+                test_result_path = json_output_folder / test_result_filename
+                with open(test_result_path, 'w', encoding='utf-8') as f:
+                    json.dump(final_output, f, indent=2, ensure_ascii=False)
+                print(f"  [OK] Test-result saved: {test_result_path}")
+            
+            # Generate Markdown result using universal parser's markdown generator
             markdown_content = generate_markdown(final_output)
             
             # Save Markdown result
@@ -143,73 +152,9 @@ def process_images_with_ocr():
     
     print(f"\n[OK] Processing complete! Results saved in:")
     print(f"  - JSON: '{json_output_folder}'")
+    print(f"  - Test-result files: '{json_output_folder}' (test-result_*.json)")
     print(f"  - Markdown: '{markdown_output_folder}'")
     print(f"  - Raw data: '{raw_data_folder}'")
-
-
-def generate_markdown(data):
-    """
-    Generate Markdown formatted output from structured data.
-    """
-    md = f"# Medical Report: {data['image_name']}\n\n"
-    md += f"**Image Path:** `{data['image_path']}`\n\n"
-    md += f"**Processed At:** {data['processed_at']}\n\n"
-    
-    # Patient Info
-    if data.get('patient_info'):
-        md += "## Patient Information\n\n"
-        for key, value in data['patient_info'].items():
-            md += f"- **{key.replace('_', ' ').title()}:** {value}\n"
-        md += "\n"
-    
-    # Laboratory Info
-    if data.get('laboratory_info'):
-        md += "## Laboratory Information\n\n"
-        for key, value in data['laboratory_info'].items():
-            md += f"- **{key.replace('_', ' ').title()}:** {value}\n"
-        md += "\n"
-    
-    # Haematology Report
-    if data.get('haematology_report'):
-        md += "## Haematology Report\n\n"
-        md += "| Test Name | Observed Value | Unit | Reference Range |\n"
-        md += "|-----------|----------------|------|-----------------|\n"
-        for test in data['haematology_report']:
-            test_name = test.get('test_name', '').replace('|', '\\|')
-            value = test.get('observed_value', '').replace('|', '\\|')
-            unit = test.get('unit', '').replace('|', '\\|')
-            ref_range = test.get('reference_range', '').replace('|', '\\|')
-            md += f"| {test_name} | {value} | {unit} | {ref_range} |\n"
-        md += "\n"
-    
-    # Blood Indices
-    if data.get('blood_indices'):
-        md += "## Blood Indices\n\n"
-        md += "| Test Name | Observed Value | Unit | Reference Range |\n"
-        md += "|-----------|----------------|------|-----------------|\n"
-        for test in data['blood_indices']:
-            test_name = test.get('test_name', '').replace('|', '\\|')
-            value = test.get('observed_value', '').replace('|', '\\|')
-            unit = test.get('unit', '').replace('|', '\\|')
-            ref_range = test.get('reference_range', '').replace('|', '\\|')
-            md += f"| {test_name} | {value} | {unit} | {ref_range} |\n"
-        md += "\n"
-    
-    # Morphology
-    if data.get('morphology'):
-        md += "## Morphology\n\n"
-        for key, value in data['morphology'].items():
-            md += f"- **{key.replace('_', ' ').title()}:** {value}\n"
-        md += "\n"
-    
-    # Footer Info
-    if data.get('footer_info'):
-        md += "## Footer Information\n\n"
-        for key, value in data['footer_info'].items():
-            md += f"- **{key.replace('_', ' ').title()}:** {value}\n"
-        md += "\n"
-    
-    return md
 
 
 if __name__ == "__main__":

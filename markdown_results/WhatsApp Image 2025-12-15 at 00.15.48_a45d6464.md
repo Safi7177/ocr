@@ -2,50 +2,47 @@
 
 **Image Path:** `images\WhatsApp Image 2025-12-15 at 00.15.48_a45d6464.jpg`
 
-**Processed At:** 2025-12-15T02:36:27.210635
+**Processed At:** 2025-12-15T05:26:37.646584
 
 ## Patient Information
 
-- **Received Date:** 08:00 AM
-- **Report Date:** Lab No/Result No
-- **Referring Doctor:** IGNATIUS AVINASH
-- **Specimen:** WHOLE BLOOD
-- **Ward Bed:** PVT-6TH/607
+- **Patient Id:** 08:52 AM
+- **Specimen:** Ward / Bed
+- **Passport No:** DEPARTMENT OF LABORATORY MEDICINE-HAEMATOLOGY
 
 ## Laboratory Information
 
-- **Name:** Grant Medical Foundation
+- **Name:** Lab No/Result No
+- **Phone:** Received Date
 
 ## Haematology Report
 
 | Test Name | Observed Value | Unit | Reference Range |
 |-----------|----------------|------|-----------------|
-| W.B.C.Count | 12000 | /ul | 4000-10000 |
-| Neutrophils | 78.3 | % | 40-80 |
-| Lymphocytes | 13.7 | % | 20 - 40 |
-| Monocytes | 7.4 | % | 2-10 |
-| Eosinophils | 0.4 | % | 1.0-6.0 |
-| Basophils | 0.2 | % | 0.0-1.0 |
-| Absolute Neutrophil Count | 9.36 | x103cells/ul | 2-7 |
-| Absolute Lymphocyte Count | 1.64 | x103cells/ul | 1-3 |
-| Absolute Monocyte Count | 0.88 | x103cells/ul | 0.2-1.0 |
-| Absolute Eosinophil Count | 0.05 | x103cells/ul | 0.02-0.5 |
-| Absolute Basophil Count | 0.03 | x103cells/ul | 0.02 - 0.1 |
-| R.B.C Count | 2.0 | million/ul | 4.5-5.5 |
-| Haemoglobin | 6.7 | g/dl | 13-17 |
-| Haematocrit | 20.4 | % | 40-50 |
-| Platelet Count | 44 | x103/ul | 150-410 |
-
-## Blood Indices
-
-| Test Name | Observed Value | Unit | Reference Range |
-|-----------|----------------|------|-----------------|
-| MCV | 99.3 | fl | 83-101 |
-| MCH | 32.8 | pg | 27-32 |
-| MCHC | 33.0 | g/dl | 31.5-34.5 |
-| RDW | 18.7 | % | 11.6-14 |
+| 08 | 00 AM |  |  |
+| 09 | 00 AM |  |  |
+| Method | Coulter Principle |  |  |
+| Neutrophils |  | % | 40-80 |
+| MethOd | OPTICAL/IMPEDENCE |  |  |
+| MethOd | OPTICAL/IMPEDENCE |  |  |
+| MethOd | OPTICAL/IMPEDENCE |  |  |
+| MethOd | OPTICAL/IMPEDENCE |  |  |
+| MethOd | OPTICAL/IMPEDENCE |  |  |
+| Method | Calculated |  |  |
+| Method | Calculated |  |  |
+| Method | Calculated |  |  |
+| Method | Calculated |  |  |
+| Method | Calculated |  |  |
+| Method | Coulter Principle |  |  |
+| Method | Photometric Measurement |  |  |
+| Method | Calculated |  |  |
+| Method | Derived from RBC Histogram |  |  |
+| Method | Calculated |  |  |
+| Method | Calculated |  |  |
+| Method | Derived from RBC Histogram |  |  |
+| Method | Coulter Principle |  |  |
 
 ## Footer Information
 
-- **Printed By:** Printed On
+- **Printed On:** 11:05:32
 
